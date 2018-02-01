@@ -1,0 +1,11 @@
+<html>
+    <head> Welcome in Music Duniya </head>
+    <br>
+    <br>
+<body>
+    {% for obj in Tag_name %}
+    <a href="{% url 'detail' id=obj.id %}">Singer Name: {{ obj.job_title }}</a><br/>
+    TAG_NAME: {{ obj.tag_name }}<br/><br/><br/>
+    {% endfor %}  
+</body>
+</html>
